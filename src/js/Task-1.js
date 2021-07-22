@@ -1,9 +1,10 @@
 'use strict';
 
 let name = 'Генератор защитного поля';
-let price = 1000;
+let price;
 let massage;
 
+price = 1000;
 massage = `Выбран ${name}, цена за штуку ${price} кредитов.`;
 console.log(massage);
 
