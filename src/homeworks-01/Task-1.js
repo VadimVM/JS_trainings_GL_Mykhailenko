@@ -9,4 +9,5 @@ massage = `Выбран ${name}, цена за штуку ${price} кредит�
 console.log(massage);
 
 price = 2000;
+massage = `Выбран ${name}, цена за штуку ${price} кредитов.`;
 console.log(massage);
