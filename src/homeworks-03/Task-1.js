@@ -1,8 +1,40 @@
-const product = {
-  name: 'apple',
-  price: 30,
+'use strict';
+
+console.log('-------------------Task-1-----------------------');
+
+const toString = function (user) {
+  for (const key of Object.keys(user)) {
+    console.log(`${key}: `, `${user[key]}`);
+  }
+  console.log('==============================');
 };
 
-const key = 'name';
+const user = {
+  name: 'Mango',
+  age: 20,
+  hobby: 'html',
+  premium: true,
+};
 
-console.log(product[key]);
+toString(user);
+
+user.mood = 'happy';
+user.hobby = 'skydiving';
+user.premium = false;
+
+toString(user);
+
+// const user = {
+//   name: 'Mango',
+//   age: 20,
+//   hobby: 'html',
+//   premium: true,
+
+//   toString() {
+//     for (const key of Object.keys(this)) {
+//       console.log(`${key}: `, `${this[key]}`);
+//     }
+//   },
+// };
+
+// user.toString();
