@@ -3,17 +3,17 @@
 console.log('-------------------Task-3-----------------------');
 
 const findBestEmployee = function (employees) {
-  const keys = Object.keys(employees);
+  const keys = Object.entries(employees);
   let bestEmploee = 0;
-  let name;
-  for (const key of keys) {
-    if (bestEmploee < employees[key]) {
-      bestEmploee = employees[key];
-      name = key;
+  let employee;
+  for (const [name, count] of keys) {
+    if (bestEmploee < count) {
+      bestEmploee = count;
+      employee = name;
     }
   }
 
-  return name;
+  return employee;
   // твой код
 };
 
